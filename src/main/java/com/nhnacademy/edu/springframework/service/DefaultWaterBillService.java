@@ -8,7 +8,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class DefaultWaterBillService implements WaterBillService{
-//    private final List<Tariff> tariffs = new ArrayList<>();
+
     TariffRepository tariffRepository;
 
     @Autowired
@@ -19,7 +19,7 @@ public class DefaultWaterBillService implements WaterBillService{
     @Override
     public List<WaterBill> calculateFee(int usage) {
         List<Tariff> tariffs = tariffRepository.findTariffByUsage(1000);
-        List<WaterBill> waterBills = null;
+        List<WaterBill> waterBills = new ArrayList<>();
         for (Tariff t : tariffs){
             String city = t.getCity();
             String usingSector = t.getUsingSector();
@@ -28,7 +28,6 @@ public class DefaultWaterBillService implements WaterBillService{
             WaterBill waterBill = new WaterBill(city,usingSector,unitPrice,totalFee);
             waterBills.add(waterBill);
         }
-        System.out.println(waterBills);
         return waterBills;
     }
 }

@@ -1,7 +1,0 @@
-
-V	java:S125"<This block of commented-out lines of code should be removed.(€½°§ùÿÿÿÿ
-U	java:S106"9Replace this use of System.out or System.err by a logger.(–ä­8¿Ç å‚0
-M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8¿Ç å‚0
-j
-java:S2259"HA "NullPointerException" could be thrown; "waterBills" is nullable here.(ÌØ¾âşÿÿÿÿ8ÛŒ‹å‚0

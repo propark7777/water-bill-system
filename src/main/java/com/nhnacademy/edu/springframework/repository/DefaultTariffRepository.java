@@ -35,7 +35,6 @@ public class DefaultTariffRepository implements TariffRepository {
                 list.add(csv);
 
             }
-            System.out.println(list);
             for (int i =1; i< list.size();i++){
                 int seq = Integer.parseInt(list.get(i).get(0));
                 String city = list.get(i).get(1);
@@ -49,7 +48,6 @@ public class DefaultTariffRepository implements TariffRepository {
                         startSection,endSection,unitPrice));
             }
         }
-        System.out.println(tariffs.get(0));
         return true;
     }
 
