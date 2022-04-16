@@ -9,6 +9,7 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class DefaultReport implements Report{
+
     private WaterBillService waterBillService;
 
     @Autowired

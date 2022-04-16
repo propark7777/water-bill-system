@@ -1,40 +1,27 @@
 package com.nhnacademy.edu.springframework.repository;
 
+import com.nhnacademy.edu.springframework.parser.DataParser;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class DefaultTariffRepository implements TariffRepository {
-    public static void main(String[] args) throws IOException {
-        DefaultTariffRepository d = new DefaultTariffRepository();
-        d.load();
-        System.out.println(d.findTariffByUsage(1000));
-    }
+    private DataParser dataParser;
     private final List<Tariff> tariffs = new ArrayList<>();
+
+    @Autowired
+    public DefaultTariffRepository(DataParser dataParser) {
+        this.dataParser = dataParser;
+    }
 
     @Override
     public boolean load() throws IOException {
-        String line;
-        try(BufferedReader br = new BufferedReader(
-            new InputStreamReader(
-                getClass().getClassLoader().getResourceAsStream("data/Tariff_20220331.csv")))) {
-            List<String> csv = new ArrayList<>();
-            List<List<String>> list = new ArrayList<>();
+        List<List<String>> list = dataParser.parseData();
 
-            while ((line = br.readLine()) != null ) {
-                String regex = ",";
-                int limit = -1;
-                String[] column = line.split(regex, limit);
-                if ( line.equals("") ) {
-                    line = " ";
-                }
-                csv = Arrays.asList(column);
-                list.add(csv);
-
-            }
             for (int i =1; i< list.size();i++){
                 int seq = Integer.parseInt(list.get(i).get(0));
                 String city = list.get(i).get(1);
@@ -47,7 +34,6 @@ public class DefaultTariffRepository implements TariffRepository {
                     new Tariff(seq,city,usingSector,stage,
                         startSection,endSection,unitPrice));
             }
-        }
         return true;
     }
 

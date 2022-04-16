@@ -4,31 +4,31 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-public class CSVDataParser implements DataParser {
-
+public class JsonDataParser implements DataParser{
+    public static void main(String[] args) throws IOException {
+        JsonDataParser jp = new JsonDataParser();
+        jp.parseData();
+    }
     @Override
     public List<List<String>> parseData() throws IOException {
         String line;
+        String result = "";
         try(BufferedReader br = new BufferedReader(
             new InputStreamReader(
-                getClass().getClassLoader().getResourceAsStream("data/Tariff_20220331.csv")))) {
+                getClass().getClassLoader().getResourceAsStream("data/Tariff_20220331.json")))) {
             List<String> csv = new ArrayList<>();
             List<List<String>> list = new ArrayList<>();
 
             while ((line = br.readLine()) != null) {
-                String regex = ",";
-                int limit = -1;
-                String[] column = line.split(regex, limit);
-                if (line.equals("")) {
-                    line = " ";
-                }
-                csv = Arrays.asList(column);
-                list.add(csv);
+                result = result.concat(line);
             }
+
+
+            System.out.println(result);
             return list;
         }
+
     }
 }

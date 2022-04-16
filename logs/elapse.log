@@ -1,0 +1,210 @@
+16:37:37.762 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [List com.nhnacademy.edu.springframework.service.WaterBillService.calculateFee(int)]
+16:37:37.766 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 555600 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+000555600  100%  
+
+16:37:39.153 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [List com.nhnacademy.edu.springframework.service.WaterBillService.calculateFee(int)]
+16:37:39.153 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 77800 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+000077800  100%  
+
+16:37:40.345 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [List com.nhnacademy.edu.springframework.service.WaterBillService.calculateFee(int)]
+16:37:40.345 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 89600 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+000089600  100%  
+
+16:38:12.442 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [calculateFee]
+16:38:12.446 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 486300 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+000486300  100%  
+
+16:38:15.234 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [calculateFee]
+16:38:15.234 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 92000 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+000092000  100%  
+
+16:38:16.490 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [calculateFee]
+16:38:16.490 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 90800 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+000090800  100%  
+
+16:38:48.953 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [csvDataParser]
+16:38:48.956 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 11727700 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+011727700  100%  
+
+16:38:48.961 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [defaultTariffRepository]
+16:38:48.961 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 678400 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+000678400  100%  
+
+16:38:48.965 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [defaultWaterBillService]
+16:38:48.965 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 564000 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+000564000  100%  
+
+16:38:48.969 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [defaultReport]
+16:38:48.969 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 455100 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+000455100  100%  
+
+16:38:48.981 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [parseData]
+16:38:48.981 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 2860500 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+002860500  100%  
+
+16:38:48.983 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [load]
+16:38:48.983 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 4625800 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+004625800  100%  
+
+16:40:31.713 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [calculateFee]
+16:40:31.717 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 471900 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+000471900  100%  
+
+16:40:33.515 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [calculateFee]
+16:40:33.515 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 76800 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+000076800  100%  
+
+16:40:35.225 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [calculateFee]
+16:40:35.225 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 87600 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+000087600  100%  
+
+16:42:00.398 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [csvDataParser]
+16:42:00.402 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 11676300 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+011676300  100%  
+
+16:42:00.407 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [defaultTariffRepository]
+16:42:00.407 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 734800 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+000734800  100%  
+
+16:42:00.411 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [defaultWaterBillService]
+16:42:00.411 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 485000 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+000485000  100%  
+
+16:42:00.415 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [defaultReport]
+16:42:00.415 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 499200 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+000499200  100%  
+
+16:42:00.427 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [parseData]
+16:42:00.428 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 3095800 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+003095800  100%  
+
+16:42:00.429 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [load]
+16:42:00.430 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 4912000 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+004912000  100%  
+
+16:42:05.487 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [findTariffByUsage]
+16:42:05.487 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 105600 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+000105600  100%  
+
+16:42:05.488 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [calculateFee]
+16:42:05.488 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 1246100 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+001246100  100%  
+
+16:42:05.504 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [reportResult]
+16:42:05.504 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 5074153900 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+5074153900  100%  
+
+16:42:07.410 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [findTariffByUsage]
+16:42:07.411 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 49500 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+000049500  100%  
+
+16:42:07.411 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [calculateFee]
+16:42:07.411 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 605300 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+000605300  100%  
+
+16:42:07.411 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [reportResult]
+16:42:07.411 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 1906472800 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+1906472800  100%  
+
+16:42:08.906 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [findTariffByUsage]
+16:42:08.907 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 41300 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+000041300  100%  
+
+16:42:08.907 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [calculateFee]
+16:42:08.907 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 604000 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+000604000  100%  
+
+16:42:08.907 [main] INFO  c.n.edu.springframework.BootStrap - 실행메서드 [reportResult]
+16:42:08.907 [main] INFO  c.n.edu.springframework.BootStrap - StopWatch '': running time = 1495815500 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+1495815500  100%  
+

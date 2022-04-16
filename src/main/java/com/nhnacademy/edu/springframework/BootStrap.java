@@ -21,10 +21,7 @@ public class BootStrap {
           WaterBillService waterBillService =
               context.getBean("defaultWaterBillService", WaterBillService.class);
 
-//        List<WaterBill> result = waterBillService.calculateFee(1000);
-//        System.out.println(result);
-
-        Report report = context.getBean("defaultReport", DefaultReport.class);
+        Report report = context.getBean("defaultReport", Report.class);
         report.reportResult();
         report.reportResult();
         report.reportResult();

@@ -1,5 +1,7 @@
 package com.nhnacademy.edu.springframework.config;
 
+import com.nhnacademy.edu.springframework.parser.CSVDataParser;
+import com.nhnacademy.edu.springframework.parser.DataParser;
 import com.nhnacademy.edu.springframework.reportingdata.DefaultReport;
 import com.nhnacademy.edu.springframework.reportingdata.Report;
 import com.nhnacademy.edu.springframework.repository.DefaultTariffRepository;
@@ -15,8 +17,8 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 public class AppConfig {
 
     @Bean
-    public TariffRepository defaultTariffRepository(){
-        return new DefaultTariffRepository();
+    public TariffRepository defaultTariffRepository(DataParser csvDataParser){
+        return new DefaultTariffRepository(csvDataParser);
     }
 
     @Bean
@@ -27,5 +29,10 @@ public class AppConfig {
     @Bean
     public Report defaultReport(WaterBillService defaultWaterBillService){
         return new DefaultReport(defaultWaterBillService);
+    }
+
+    @Bean
+    public DataParser csvDataParser(){
+        return new CSVDataParser();
     }
 }

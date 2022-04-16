@@ -1,7 +1,8 @@
 package com.nhnacademy.edu.springframework.parser;
 
 import java.io.IOException;
+import java.util.List;
 
 public interface DataParser {
-    String parseData(String path);
+    List<List<String>> parseData() throws IOException;
 }
