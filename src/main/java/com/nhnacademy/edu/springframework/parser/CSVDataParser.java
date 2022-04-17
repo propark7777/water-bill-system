@@ -10,14 +10,13 @@ import java.util.List;
 public class CSVDataParser implements DataParser {
 
     @Override
-    public List<List<String>> parseData() throws IOException {
+    public List<List<String>> parseData(String extensionName) throws IOException {
         String line;
         try(BufferedReader br = new BufferedReader(
             new InputStreamReader(
-                getClass().getClassLoader().getResourceAsStream("data/Tariff_20220331.csv")))) {
+                getClass().getClassLoader().getResourceAsStream("data/Tariff_20220331."+extensionName)))) {
             List<String> csv = new ArrayList<>();
             List<List<String>> list = new ArrayList<>();
-
             while ((line = br.readLine()) != null) {
                 String regex = ",";
                 int limit = -1;
@@ -28,6 +27,8 @@ public class CSVDataParser implements DataParser {
                 csv = Arrays.asList(column);
                 list.add(csv);
             }
+            list.remove(0);
+
             return list;
         }
     }

@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class DefaultReport implements Report{
 
-    private WaterBillService waterBillService;
+    private final WaterBillService waterBillService;
 
     @Autowired
     public DefaultReport(WaterBillService waterBillService) {
@@ -21,13 +21,10 @@ public class DefaultReport implements Report{
     public List<WaterBill> reportResult() {
         Scanner scanner = new Scanner(System.in);
         int inputWaterUsage = scanner.nextInt();
-        List<WaterBill> result = waterBillService.calculateFee(inputWaterUsage)
+
+        return waterBillService.calculateFee(inputWaterUsage)
             .stream().sorted(Comparator.comparingLong(WaterBill::getUnitPrice))
             .limit(5)
             .collect(Collectors.toList());
-        for (WaterBill waterBill : result){
-            System.out.println(waterBill);
-        }
-        return result;
     }
 }

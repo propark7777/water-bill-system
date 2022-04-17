@@ -1,6 +1,5 @@
 package com.nhnacademy.edu.springframework.aspect;
 
-import com.nhnacademy.edu.springframework.BootStrap;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -12,7 +11,7 @@ import org.springframework.util.StopWatch;
 @Aspect
 @Component
 public class LoggerAspect {
-    private static final Log log = LogFactory.getLog(BootStrap.class);
+    private static final Log log = LogFactory.getLog(LoggerAspect.class);
     @Around("execution(* com.nhnacademy.edu.springframework.*.*.*(..))")
     public Object loggingSendMessage(ProceedingJoinPoint pjp)throws Throwable {
         StopWatch stopWatch = new StopWatch();

@@ -1,28 +1,27 @@
 package com.nhnacademy.edu.springframework.repository;
 
 import com.nhnacademy.edu.springframework.parser.DataParser;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class DefaultTariffRepository implements TariffRepository {
-    private DataParser dataParser;
+    private Map<String,DataParser> dataParser;
     private final List<Tariff> tariffs = new ArrayList<>();
 
     @Autowired
-    public DefaultTariffRepository(DataParser dataParser) {
+    public DefaultTariffRepository(Map<String, DataParser> dataParser) {
         this.dataParser = dataParser;
     }
 
     @Override
-    public boolean load() throws IOException {
-        List<List<String>> list = dataParser.parseData();
-
-            for (int i =1; i< list.size();i++){
+    public boolean load(String extensionName) throws IOException, ParseException {
+        String parserType = extensionName+"DataParser";
+        List<List<String>> list = dataParser.get(parserType).parseData(extensionName);
+            for (int i =0; i< list.size();i++){
                 int seq = Integer.parseInt(list.get(i).get(0));
                 String city = list.get(i).get(1);
                 String usingSector = list.get(i).get(2);

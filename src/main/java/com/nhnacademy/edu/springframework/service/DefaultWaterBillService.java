@@ -18,7 +18,7 @@ public class DefaultWaterBillService implements WaterBillService{
 
     @Override
     public List<WaterBill> calculateFee(int usage) {
-        List<Tariff> tariffs = tariffRepository.findTariffByUsage(1000);
+        List<Tariff> tariffs = tariffRepository.findTariffByUsage(usage);
         List<WaterBill> waterBills = new ArrayList<>();
         for (Tariff t : tariffs){
             String city = t.getCity();

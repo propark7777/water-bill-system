@@ -1,6 +1,5 @@
 package com.nhnacademy.edu.springframework.service;
 
-import com.nhnacademy.edu.springframework.repository.Tariff;
 import com.nhnacademy.edu.springframework.repository.WaterBill;
 import java.util.List;
 
